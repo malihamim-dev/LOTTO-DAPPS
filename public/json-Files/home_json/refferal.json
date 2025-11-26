@@ -1,0 +1,25 @@
+[
+  {
+    "Parcentage": "10%",
+    "text": "You will get 10% from level one"
+  },
+  {
+    "Parcentage": "5%",
+    "text": "You will get 5% from level two"
+  },
+  {
+    "Parcentage": "3%",
+    "text": "You will get 3% from level three"
+    
+  },
+  {
+    "Parcentage": "2%",
+    "text": "You will get 2% from level four"
+  },
+  {
+    "Parcentage": "1%",
+    "text": "You will get 1% from level five"
+  }
+]
+
+
