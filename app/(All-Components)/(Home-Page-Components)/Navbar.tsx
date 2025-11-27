@@ -1,18 +1,10 @@
 'use client';
 import * as React from 'react';
-
-
 import { FaMoon } from "react-icons/fa";
 import { FaStarOfLife } from "react-icons/fa";
-import { SiBinance } from "react-icons/si";
-
-
 import binance from '../../../public/(home-page-image)/Navbar-image/binance.png'
-import chainlink from '../../../public/(home-page-image)/Navbar-image/chainlink.png'
-import coinbase from '../../../public/(home-page-image)/Navbar-image/coinbase.png'
 import metamask from '../../../public/(home-page-image)/Navbar-image/Metamask2.png'
 import trustwallet from '../../../public/(home-page-image)/Navbar-image/trustwallet.png'
-import trustwalletimg from '@/public/(home-page-image)/Navbar-image/trustwallet.png';
 
 
 import { useEffect, useState, useRef } from 'react';
@@ -36,6 +28,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
 import Image from 'next/image';
+import Connect_Wallet from '../(Shard-Component)/Connect_Wallet';
 
 
 // Simple logo component for the navbar
@@ -130,6 +123,7 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
         ref
     ) => {
         const [isMobile, setIsMobile] = useState(false);
+        const [showWallet, setShowWallet] = useState(false);
         const containerRef = useRef<HTMLElement>(null);
         const pathname = usePathname();
 
@@ -281,34 +275,41 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                     {/* Right side */}
                     <div className=' hidden lg:block'>
                         <div className="flex items-center gap-3 ">
-                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                                <Button className="w-24 lg:w-10 2xl:w-24 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
+                                <Button
+                                    onClick={() => setShowWallet(true)}
+                                    className="w-24 lg:w-10 2xl:w-24 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer ">
                                     Play
+                                    {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}
+
                                 </Button>
                             </div>
-                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                                <Button className="w-16 lg:w-10 2xl:w-16 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
+                                <Button className="w-16 lg:w-10 2xl:w-16 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                                     V
                                 </Button>
                             </div>
-                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                                <Button className="w-16 lg:w-10 2xl:w-16 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
+                                <Button className="w-16 lg:w-10 2xl:w-16 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                                     F
                                 </Button>
                             </div>
-                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                                <Button className="w-24 lg:w-10 2xl:w-24  h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
+                                <Button className="w-24 lg:w-10 2xl:w-24  h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                                     Eng
                                 </Button>
                             </div>
-                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                                <Button className="w-10 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                            <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
+                                <Button className="w-10 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm  text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                                     <FaMoon />
                                 </Button>
                             </div>
                         </div>
                     </div>
                 </div>
+                 {showWallet && (
+                    <Connect_Wallet onClose={() => setShowWallet(false)} />
+                )}
             </header>
         );
     }
