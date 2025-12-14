@@ -7,8 +7,6 @@ import Lottie from "lottie-react";
 import { Button } from '@/components/ui/button';
 import { TextAnimate } from "@/components/ui/text-animate"
 
-
-// Lottie animations
 import blocchain_crypto from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Blockchain  Crypto.json';
 import crypto_Wallet from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Crypto Wallet.json';
 import gift_box_effect from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Gift box effect.json';

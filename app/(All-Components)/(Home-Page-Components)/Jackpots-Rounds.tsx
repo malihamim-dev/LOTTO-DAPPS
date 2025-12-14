@@ -29,7 +29,7 @@ export default function Jackpots_Rounds() {
                 <div className='pt-3.5'>
                     <div>
                         <h3 className=' text-[#ffffff] text-lg md:text-[16px] lg:text-lg xl:text-3xl text-center md:text-start font-medium pt-5 opacity-95'>Next Draw</h3>
-                        <div className=' text-white text-center md:text-start font-medium text-2xl pt-2 flex opacity-95'>
+                        <div className=' text-white text-center md:text-start font-medium text-2xl pt-2 flex items-center justify-center md:items-start md:justify-start opacity-95'>
                             <div className=' pr-3'>
                                 <p>121 </p>
                                 <p className=' text-[12px] text-[#FF5F1F]'>Days</p>
@@ -51,11 +51,11 @@ export default function Jackpots_Rounds() {
                     </div>
                     <div className=' mt-10'>
                         <div>
-                            <div className=' flex gap-x-5'>
+                            <div className=' flex gap-x-5 items-center justify-center md:items-start md:justify-start'>
                                 <div>
-                                    <h1 className='text-xl md:text-[16px] lg:text-xl xl:text-[24px] font-medium  text-white   opacity-95'> Smart Play Results</h1>
+                                    <h1 className='text-xl md:text-lg lg:text-xl xl:text-[24px] font-medium  text-white   opacity-95'> Smart Play Results</h1>
                                 </div>
-                                <div className=' h-8 w-8 rounded-full bg-[#FF5F1F] opacity-95 flex items-center justify-center'>
+                                <div className=' h-8 w-8 md:h-7 md:w-7 rounded-full bg-[#FF5F1F] opacity-95 flex items-center justify-center'>
                                     <GoArrowUpRight className=' text-white text-lg' />
                                 </div>
                             </div>
@@ -133,7 +133,7 @@ export default function Jackpots_Rounds() {
                 <div className='pt-3.5'>
                     <div>
                         <h3 className=' text-[#ffffff] text-lg md:text-[16px] lg:text-lg xl:text-3xl text-center md:text-start font-medium pt-5 opacity-95'>Next Draw</h3>
-                        <div className=' text-white text-center md:text-start font-medium text-2xl pt-2 flex opacity-95'>
+                        <div className=' text-white text-center md:text-start font-medium text-2xl pt-2 flex items-center justify-center md:items-start md:justify-start opacity-95'>
                             <div className=' pr-3'>
                                 <p>121 </p>
                                 <p className=' text-[12px] text-[#FF5F1F]'>Days</p>
@@ -150,15 +150,16 @@ export default function Jackpots_Rounds() {
                                 <p>24</p>
                                 <p className=' text-[12px] text-[#FF5F1F]'>Seconds</p>
                             </div>
+
                         </div>
                     </div>
-                    <div className='mt-10'>
+                    <div className=' mt-10'>
                         <div>
-                            <div className=' flex gap-x-5'>
+                            <div className=' flex gap-x-5 items-center justify-center md:items-start md:justify-start'>
                                 <div>
-                                    <h1 className='text-xl md:text-[16px] lg:text-xl xl:text-[24px] font-medium  text-white   opacity-95'> Smart Play Results</h1>
+                                    <h1 className='text-xl md:text-lg lg:text-xl xl:text-[24px] font-medium  text-white   opacity-95'> Smart Play Results</h1>
                                 </div>
-                                <div className=' h-8 w-8 rounded-full bg-[#FF5F1F] opacity-95 flex items-center justify-center'>
+                                <div className=' h-8 w-8 md:h-7 md:w-7 rounded-full bg-[#FF5F1F] opacity-95 flex items-center justify-center'>
                                     <GoArrowUpRight className=' text-white text-lg' />
                                 </div>
                             </div>
@@ -219,7 +220,7 @@ export default function Jackpots_Rounds() {
                                             USDT
                                         </span>
                                     </p>
-                                </BackgroundGradient>
+                     </BackgroundGradient>
                             </div>
                         </div>
                     </div>

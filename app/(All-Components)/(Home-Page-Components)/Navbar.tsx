@@ -4,18 +4,14 @@ import { FaMoon } from "react-icons/fa";
 import { FaStarOfLife } from "react-icons/fa";
 import binance from '../../../public/(home-page-image)/Navbar-image/binance.png'
 import metamask from '../../../public/(home-page-image)/Navbar-image/Metamask2.png'
-import trustwallet from '../../../public/(home-page-image)/Navbar-image/trustwallet.png'
 
 
 import { useEffect, useState, useRef } from 'react';
 import {
     NavigationMenu,
-    NavigationMenuContent,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
+
 } from "@/components/ui/navigation-menu"
 
 import {
@@ -31,7 +27,6 @@ import Image from 'next/image';
 import Connect_Wallet from '../(Shard-Component)/Connect_Wallet';
 
 
-// Simple logo component for the navbar
 const Logo = (props: React.SVGAttributes<SVGElement>) => {
     return (
         <p className=' text-2xl md:text-3xl text-[#BA3FEC]  '>
@@ -97,14 +92,8 @@ const defaultNavigationLinks: Navbar01NavLink[] = [
     { href: '/WhitePaper', label: 'White Paper' },
     { href: '/About', label: 'About' },
 
-
-
-
-
 ];
 export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
-
-
 
     (
         {
@@ -131,7 +120,7 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
             const checkWidth = () => {
                 if (containerRef.current) {
                     const width = containerRef.current.offsetWidth;
-                    setIsMobile(width < 1024); // 768px is md breakpoint
+                    setIsMobile(width < 1024);
                 }
             };
             checkWidth();
@@ -143,7 +132,6 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                 resizeObserver.disconnect();
             };
         }, []);
-        // Combine refs
         const combinedRef = React.useCallback((node: HTMLElement | null) => {
             containerRef.current = node;
             if (typeof ref === 'function') {
@@ -192,19 +180,12 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                                         </NavigationMenu>
 
                                         {/* Wallet icons section */}
-                                        <div className="grid grid-cols-4 md:grid-cols-8 items-center justify-between w-full gap-x-5 pl-3">
-                                            <div>
-                                                <Image src={binance} alt="binance" className="object-contain" />
+                                        <div className=" items-center justify-between w-full gap-x-5 pl-3">
+                                            <div className='border rounded-sm px-5 py-2 border-[#ffffff] hover:bg-[#ff5f1f] hover:border-none'>
+                                              <h3 className=' text-xl font-semibold text-white'>Connect Wallet</h3>
                                             </div>
-                                            <div>
-                                                <Image src={metamask} alt="metamask" className="object-contain" />
-                                            </div>
-                                            <div>
-                                                <Image src={metamask} alt="metamask" className="object-contain" />
-                                            </div>
+                                            
                                         </div>
-
-                                        {/* Bottom buttons */}
                                         <div className="flex items-center justify-between w-full gap-x-5 my-10">
                                             <div className="flex items-center gap-3 pl-3">
                                                 {/* V button */}
@@ -213,20 +194,16 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                                                         V
                                                     </Button>
                                                 </div>
-
-                                                {/* F button */}
                                                 <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                                                     <Button className="w-10 2xl:w-16 h-10 rounded-full text-center text-[10px] text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                                         F
                                                     </Button>
                                                 </div>
-                                                {/* Eng button */}
                                                 <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                                                     <Button className="w-10 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                                         Eng
                                                     </Button>
                                                 </div>
-                                                {/* Moon icon button */}
                                                 <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                                                     <Button className="w-10 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                                         <FaMoon />
@@ -281,7 +258,6 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                                     className="w-24 lg:w-10 2xl:w-24 h-10 rounded-full text-center text-sm lg:text-[10px] xl:text-sm text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer ">
                                     Play
                                     {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}
-
                                 </Button>
                             </div>
                             <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block hover:scale-105 cursor-pointer">
@@ -307,7 +283,7 @@ export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(
                         </div>
                     </div>
                 </div>
-                 {showWallet && (
+                {showWallet && (
                     <Connect_Wallet onClose={() => setShowWallet(false)} />
                 )}
             </header>

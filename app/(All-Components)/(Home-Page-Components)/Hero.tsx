@@ -21,7 +21,6 @@ export default function Hero() {
         setColor(resolvedTheme === "white" ? "#ffffff" : "#ffffff");
     }, [resolvedTheme]);
 
-
     const words = ["Blockchain", "Oracal", "Openzeepline"];
 
 
