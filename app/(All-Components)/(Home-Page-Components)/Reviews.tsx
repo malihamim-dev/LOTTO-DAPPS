@@ -27,7 +27,7 @@ export default function Reviews() {
                 <div className=' grid md:grid-cols-2 mt-5 gap-4 xl:gap-10'>
 
                     {/* card 1 */}
-                    <BackgroundGradient className=" rounded-[22px] lg:p-10 p-5 bg-[#180A3C] dark:bg-zinc-900">
+                    <BackgroundGradient className=" rounded-[22px] p-5 lg:p-6 xl:p-10  bg-[#180A3C] dark:bg-zinc-900">
                         <div className=' w-full rounded-2xl'>
                             {/* image section  */}
                             <div className='  flex items-center gap-x-4'>
@@ -41,7 +41,7 @@ export default function Reviews() {
                             </div>
                             {/* text and image section  */}
 
-                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-2'>
+                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-0'>
                                 <div className=' col-span-2'>
                                     <div className='  flex items-center gap-x-0.5 mt-1 pb-2'>
                                         <div>
@@ -64,19 +64,19 @@ export default function Reviews() {
                                         <span>
                                             <FaQuoteLeft className=' text-lg md:text-2xl text-[#FF5F1F]' />
                                         </span>
-                                        <span className='  text-[8px] lg:text-[10px] xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-4 xl:leading-6 font-normal text-white'>
+                                        <span className='  text-[8px] lg:text-sm xl:text-sm 2xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-5 xl:leading-5 2xl:leading-5 font-normal text-white'>
                                             When you land on a sample web page or open an email template and see content beginning with "lorem ipsum," the page creator placed that apparent gibberish there on purpose.
                                         </span>
                                     </p>
                                 </div>
                                 <div className=' col-span-1'>
-                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 xl:w-full xl:h-[260px]' />
+                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 md:h-full md:w-full xl:w-full xl:h-full 2xl:w-full 2xl:h-[260px]' />
                                 </div>
                             </div>
                         </div>
                     </BackgroundGradient>
 
-                    <BackgroundGradient className=" rounded-[22px] lg:p-10 p-5 bg-[#180A3C] dark:bg-zinc-900">
+                    <BackgroundGradient className=" rounded-[22px] p-5 lg:p-6 xl:p-10  bg-[#180A3C] dark:bg-zinc-900">
                         <div className=' w-full rounded-2xl'>
                             {/* image section  */}
                             <div className='  flex items-center gap-x-4'>
@@ -90,7 +90,7 @@ export default function Reviews() {
                             </div>
                             {/* text and image section  */}
 
-                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-2'>
+                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-0'>
                                 <div className=' col-span-2'>
                                     <div className='  flex items-center gap-x-0.5 mt-1 pb-2'>
                                         <div>
@@ -113,19 +113,19 @@ export default function Reviews() {
                                         <span>
                                             <FaQuoteLeft className=' text-lg md:text-2xl text-[#FF5F1F]' />
                                         </span>
-                                        <span className='  text-[8px] lg:text-[10px] xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-4 xl:leading-6 font-normal text-white'>
+                                        <span className='  text-[8px] lg:text-sm xl:text-sm xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-5 xl:leading-6 font-normal text-white'>
                                             When you land on a sample web page or open an email template and see content beginning with "lorem ipsum," the page creator placed that apparent gibberish there on purpose.
                                         </span>
                                     </p>
                                 </div>
                                 <div className=' col-span-1'>
-                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 xl:w-full xl:h-[260px]' />
+                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 md:h-full md:w-full xl:w-full xl:h-full 2xl:w-full 2xl:h-[260px]' />
                                 </div>
                             </div>
                         </div>
                     </BackgroundGradient>
 
-                    <BackgroundGradient className=" rounded-[22px] lg:p-10 p-5 bg-[#180A3C] dark:bg-zinc-900">
+                    <BackgroundGradient className=" rounded-[22px] p-5 lg:p-6 xl:p-10  bg-[#180A3C] dark:bg-zinc-900">
                         <div className=' w-full rounded-2xl'>
                             {/* image section  */}
                             <div className='  flex items-center gap-x-4'>
@@ -139,7 +139,7 @@ export default function Reviews() {
                             </div>
                             {/* text and image section  */}
 
-                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-2'>
+                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-0'>
                                 <div className=' col-span-2'>
                                     <div className='  flex items-center gap-x-0.5 mt-1 pb-2'>
                                         <div>
@@ -162,19 +162,19 @@ export default function Reviews() {
                                         <span>
                                             <FaQuoteLeft className=' text-lg md:text-2xl text-[#FF5F1F]' />
                                         </span>
-                                        <span className='  text-[8px] lg:text-[10px] xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-4 xl:leading-6 font-normal text-white'>
+                                        <span className='  text-[8px] lg:text-sm xl:text-sm xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-5 xl:leading-6 font-normal text-white'>
                                             When you land on a sample web page or open an email template and see content beginning with "lorem ipsum," the page creator placed that apparent gibberish there on purpose.
                                         </span>
                                     </p>
                                 </div>
                                 <div className=' col-span-1'>
-                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 xl:w-full xl:h-[260px]' />
+                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 md:h-full md:w-full xl:w-full xl:h-full 2xl:w-full 2xl:h-[260px]' />
                                 </div>
                             </div>
                         </div>
                     </BackgroundGradient>
-                   
-                    <BackgroundGradient className=" rounded-[22px] lg:p-10 p-5 bg-[#180A3C] dark:bg-zinc-900">
+
+                    <BackgroundGradient className=" rounded-[22px] p-5 lg:p-6 xl:p-10  bg-[#180A3C] dark:bg-zinc-900">
                         <div className=' w-full rounded-2xl'>
                             {/* image section  */}
                             <div className='  flex items-center gap-x-4'>
@@ -188,7 +188,7 @@ export default function Reviews() {
                             </div>
                             {/* text and image section  */}
 
-                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-2'>
+                            <div className='  grid grid-cols-3 items-center gap-x-0.5 mt-0'>
                                 <div className=' col-span-2'>
                                     <div className='  flex items-center gap-x-0.5 mt-1 pb-2'>
                                         <div>
@@ -211,13 +211,13 @@ export default function Reviews() {
                                         <span>
                                             <FaQuoteLeft className=' text-lg md:text-2xl text-[#FF5F1F]' />
                                         </span>
-                                        <span className='  text-[8px] lg:text-[10px] xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-4 xl:leading-6 font-normal text-white'>
+                                        <span className='  text-[8px] lg:text-sm xl:text-sm xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-5 xl:leading-6 font-normal text-white'>
                                             When you land on a sample web page or open an email template and see content beginning with "lorem ipsum," the page creator placed that apparent gibberish there on purpose.
                                         </span>
                                     </p>
                                 </div>
                                 <div className=' col-span-1'>
-                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 xl:w-full xl:h-[260px]' />
+                                    <Image src={astorateimage} alt='astro image' className=' w-16 h-28 md:h-full md:w-full xl:w-full xl:h-full 2xl:w-full 2xl:h-[260px]' />
                                 </div>
                             </div>
                         </div>
