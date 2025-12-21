@@ -15,7 +15,7 @@ interface ConnectWalletProps {
 
 const Connect_Wallet: React.FC<ConnectWalletProps> = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center opacity-100">
       <div className="absolute inset-0 bg-black/5 backdrop-blur-md" ></div>
       <div className="relative z-10 w-80 rounded-2xl bg-[#0c042c89] p-5 backdrop-blur-md space-y-4">
         <div className="flex items-center justify-between">

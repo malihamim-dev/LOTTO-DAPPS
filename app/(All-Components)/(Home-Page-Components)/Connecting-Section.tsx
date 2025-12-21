@@ -11,9 +11,15 @@ import blocchain_crypto from '../../../public/(Lotty_files)/(home-lotty)/Winning
 import crypto_Wallet from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Crypto Wallet.json';
 import gift_box_effect from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Gift box effect.json';
 import robot from '../../../public/(Lotty_files)/(home-lotty)/Winning_Universe_Hero_Lotty/Robot assistant  Online manager.json';
+import Connect_Wallet from '../(Shard-Component)/Connect_Wallet';
 
 
 export default function Connecting_Section() {
+
+          const [showWallet, setShowWallet] = useState(false);
+      
+
+
     return (
         <>
             <style jsx>
@@ -34,11 +40,11 @@ export default function Connecting_Section() {
                 `}
             </style>
 
-            <div className=" px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-28  py-10 overflow-hidden max-w-[1596px] mx-auto">
+            <div className=" px-5 md:px-8 lg:px-10 xl:px-20 2xl:px-28  pb-10 :pb-20 overflow-hidden max-w-[1596px] mx-auto">
                 {/* Animated Border Card */}
                 <div
                     className="relative p-5 w-full rounded-[30px] border-4 border-transparent bg-[#1B0C41] py-10 grid md:grid-cols-3"
-                    style={{ "--bg": "hsl(190deg 20% 10%)", animation: "border-rotate 4s linear infinite", background: "linear-gradient(#1B0C41, #1B0C41) padding-box, conic-gradient(from var(--border-angle), var(--bg) 50%, #463481, #D9828A, #463481) border-box", }}>
+                    style={{ "--bg": "hsl(190deg 20% 10%)", animation: "border-rotate 4s linear infinite", background: "linear-gradient(#1B0C41, #1B0C41) padding-box, conic-gradient(from var(--border-angle), var(--bg) 50%, #463481, #D9828A, #463481) border-box", } as React.CSSProperties}>
                     {/* left section  */}
                     <div className='hidden md:block'>
                         <div className=" md:flex items-center justify-end px-5 lg:px-10 h-full">
@@ -83,10 +89,13 @@ export default function Connecting_Section() {
                                 ))}
                                 {/* 🎮 Play Now Button */}
                                 <div className="flex justify-center">
-                                    <div className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl">
-                                        <Button className=" h-5 w-20 md:h-10 lg:h-16 md:w-28 lg:w-52 rounded-full text-[10px] md:text-[16px] lg:text-lg xl:text-3xl text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] flex items-center justify-center">
+                                    <div
+                                        onClick={() => setShowWallet(true)}
+                                        className="p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl">
+                                        <Button className=" h-5 w-20 md:h-10 lg:h-16 md:w-28 lg:w-52 rounded-full text-[10px] md:text-[16px] lg:text-lg xl:text-3xl text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] flex items-center justify-center cursor-pointer">
                                             Play Now
                                         </Button>
+                                        {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}
                                     </div>
                                 </div>
                             </div>

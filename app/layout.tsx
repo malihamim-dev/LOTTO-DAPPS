@@ -3,9 +3,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { Navbar } from "./(All-Components)/(Home-Page-Components)/Navbar";
-import Footer from "./(All-Components)/(Home-Page-Components)/Footer";
+import Footer from "./(Common-Components)/Footer";
 import Background2 from "./(All-Components)/(Shard-Component)/Background2";
+import { Navbar } from "./(Common-Components)/Navbar";
 
 
 

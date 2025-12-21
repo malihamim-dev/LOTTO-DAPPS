@@ -23,8 +23,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
-import Image from 'next/image';
-import Connect_Wallet from '../(Shard-Component)/Connect_Wallet';
+import Connect_Wallet from '../(All-Components)/(Shard-Component)/Connect_Wallet';
 
 
 const Logo = (props: React.SVGAttributes<SVGElement>) => {
@@ -87,10 +86,10 @@ const defaultNavigationLinks: Navbar01NavLink[] = [
     { href: '/', label: 'Home', active: true },
     { href: '/How-It-Works', label: 'How It Works' },
     { href: '/Raffles', label: 'Raffles' },
-    { href: '/Winner', label: 'Winner' },
+    { href: '/Premium-Member', label: 'Premium Member' },
     { href: '/Blogs', label: 'Blogs' },
-    { href: '/WhitePaper', label: 'White Paper' },
     { href: '/About', label: 'About' },
+
 
 ];
 export const Navbar = React.forwardRef<HTMLElement, Navbar01Props>(

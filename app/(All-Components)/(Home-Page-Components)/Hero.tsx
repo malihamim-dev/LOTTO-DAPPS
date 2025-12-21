@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -5,16 +6,19 @@ import { Button } from "@/components/ui/button";
 import { Meteors } from "@/components/ui/meteors";
 import { Particles } from "@/components/ui/particles";
 import { useTheme } from "next-themes";
-import Lottie from "lottie-react";
 import { NumberTicker } from "@/components/ui/number-ticker"
 import { EncryptedText } from "@/components/ui/encrypted-text";
 import { FlipWords } from "@/components/ui/flip-words";
-import bitconCryptocurrency from '../../../public/(Lotty_files)/(home-lotty)/Play_And_win_Section_sec_lotty/Bitcoin Cryptocurrency city.json'
 
+
+import daduimage from "@/public/(home-page-image)/Banner-Image/dadu1.png"
+import Connect_Wallet from "../(Shard-Component)/Connect_Wallet";
 
 export default function Hero() {
     const { resolvedTheme } = useTheme();
     const [color, setColor] = useState("#ffffff");
+    const [showWallet, setShowWallet] = useState(false);
+
 
 
     useEffect(() => {
@@ -26,7 +30,7 @@ export default function Hero() {
 
 
     return (
-        <div className="relative h-full md:h-[360px] lg:h-full pb-10  overflow-hidden max-w-[1596px] mx-auto ">
+        <div className="relative h-full md:h-[360px] lg:h-full pb-2 md:pb-20  overflow-hidden max-w-[1596px] mx-auto ">
             {/* Background Effects */}
             <Meteors number={100} />
             <Particles className="absolute inset-0 z-0" quantity={100} color={color} refresh />
@@ -47,10 +51,13 @@ export default function Hero() {
                         <FlipWords words={words} className=" text-white font-semibold" />
                     </p>
                     <div className="flex gap-4 items-center justify-center md:items-start md:justify-start">
-                        <div className="p-[1px] lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                            <Button className="w-20 lg:w-28 xl:w-40 h-6.5 lg:h-9 xl:h-12 rounded-full text-center text-[10px] lg:text-[12px] xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                        <div className="p-[1px] lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block ">
+                            <Button 
+                            onClick={() => setShowWallet(true)}
+                            className="w-20 lg:w-28 xl:w-40 h-6.5 lg:h-9 xl:h-12 rounded-full text-center text-[10px] lg:text-[12px] xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                                 Play Now
                             </Button>
+                             {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}
                         </div>
                         <div className="p-[1px] lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                             <Button className="w-20 lg:w-28 xl:w-40 h-6.5 lg:h-9 xl:h-12 rounded-full text-center text-[10px] lg:text-[12px] xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
@@ -97,8 +104,8 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* Right Side */}
-                <div className="relative md:flex justify-center items-center hidden md:block">
-                    <Lottie animationData={bitconCryptocurrency} loop={true} className="" />
+                <div className="relative md:flex justify-center items-center hidden md:block p-10">
+                    <Image src={daduimage} alt="dadu image" className=" h-full w-full" />
                 </div>
             </div>
         </div>
