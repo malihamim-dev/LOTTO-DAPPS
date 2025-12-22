@@ -152,10 +152,8 @@ export default function Ticket_Packages() {
                   </div>
                 </div>
               </div>
-
             ))
           }
-
         </div>
       </div>
 
@@ -260,10 +258,8 @@ export default function Ticket_Packages() {
                   </div>
                 </div>
               </div>
-
             ))
           }
-
         </div>
       </div>
 
@@ -371,7 +367,6 @@ export default function Ticket_Packages() {
           }
         </div>
       </div>
-
     </div>
   )
 }

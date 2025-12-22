@@ -28,7 +28,6 @@ export default function Reffer_And_Earn_Swaip_Component() {
             <div>
                 {switchTab === "referAndearn" && <Reffer_And_Earn />}
                 {switchTab === "myEarning" && <My_Earning_All_Component />}
-
             </div>
         </div>
     )

@@ -202,7 +202,6 @@ export default function Reviews() {
                                         </span>
                                         <span className='  text-[8px] lg:text-sm xl:text-xs 2xl:text-[16px] leading-2.5 md:leading-3.5 lg:leading-5 xl:leading-5 2xl:leading-5 font-normal text-white pb-3'>
                                             When you land on a sample web page or open an email template and see content beginning with "lorem ipsum," the page creator placed that apparent gibberish there on purpose.
-                                           
                                         </span>
                                     </p>
                                 </div>

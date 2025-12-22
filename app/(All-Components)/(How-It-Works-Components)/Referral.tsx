@@ -95,12 +95,12 @@ export default function Referral() {
                                         <div className=''>
                                             <h4 className=' text-[12px] md:text-lg lg:text-2xl font-bold px-5 text-[#FF5F1F]'>You</h4>
                                         </div>
-                                        <div className=' flex items-center pl-0 md:pl-[28px]'>
+                                        <div className=' flex items-center pl-0 md:pl-7'>
                                             <p className=' border-[#FF5F1F] border-t md:border-t w-10 md:w-20'></p>
                                             <p><IoMdArrowDropright className=' text-sm md:text-2xl -ml-1 md:-ml-3 text-[#FF5F1F]' /></p>
                                         </div>
                                     </div>
-                                    <div className='-ml-1 items-center justify-center mx-auto mt-[80px] md:mt-20'>
+                                    <div className='-ml-1 items-center justify-center mx-auto mt-20'>
                                         <div className=" z-10">
                                             <p className=' h-7 w-7 md:h-16 md:w-16 opacity-95'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block ' /></p>
                                         </div>
@@ -120,11 +120,11 @@ export default function Referral() {
                                             <p><IoMdArrowDropright className=' text-sm md:text-2xl -ml-2 md:-ml-3 text-[#FF5F1F]' /></p>
                                         </div>
                                     </div>
-                                    <div className='-ml-2 md:-ml-0 items-center justify-center mx-auto mt-7 md:mt-20'>
+                                    <div className='-ml-2 items-center justify-center mx-auto mt-7 md:mt-20'>
                                         <div>
                                             <p className=' h-7 w-7 md:h-16 md:w-16'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block' /></p>
                                         </div>
-                                        <div className=' items-center justify-center ml-[14px] md:ml-8'>
+                                        <div className=' items-center justify-center ml-3.5 md:ml-8'>
                                             <p className=' border-l md:border-l h-5 border-[#FF5F1F]'></p>
                                             <p className=' text-sm md:text-4xl  text-[#FF5F1F] -ml-1.5 md:-ml-[17px] -mt-2 md:-mt-4'><MdArrowDropDown /></p>
                                         </div>
@@ -140,11 +140,11 @@ export default function Referral() {
                                             <p><IoMdArrowDropright className=' text-sm md:text-2xl -ml-2 md:-ml-3 text-[#FF5F1F]' /></p>
                                         </div>
                                     </div>
-                                    <div className='-ml-2.5 md:-ml-0 items-center justify-center mx-auto mt-7 md:mt-20'>
+                                    <div className='-ml-2.5 md:ml-0 items-center justify-center mx-auto mt-7 md:mt-20'>
                                         <div>
                                             <p className=' h-7 w-7 md:h-16 md:w-16'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block' /></p>
                                         </div>
-                                        <div className=' items-center justify-center ml-[14px] md:ml-8'>
+                                        <div className=' items-center justify-center ml-3.5 md:ml-8'>
                                             <p className=' border-l md:border-l h-5 border-[#FF5F1F]'></p>
                                             <p className=' text-sm md:text-4xl  text-[#FF5F1F] -ml-1.5 md:-ml-[17px] -mt-2 md:-mt-4'><MdArrowDropDown /></p>
                                         </div>
@@ -164,7 +164,7 @@ export default function Referral() {
                                         <div>
                                             <p className=' h-7 w-7 md:h-16 md:w-16'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block' /></p>
                                         </div>
-                                        <div className=' items-center justify-center ml-[14px] md:ml-8'>
+                                        <div className=' items-center justify-center ml-3.5 md:ml-8'>
                                             <p className=' border-l md:border-l h-5 border-[#FF5F1F]'></p>
                                             <p className=' text-sm md:text-4xl  text-[#FF5F1F] -ml-1.5 md:-ml-[17px] -mt-2 md:-mt-4'><MdArrowDropDown /></p>
                                         </div>
@@ -180,11 +180,11 @@ export default function Referral() {
                                             <p><IoMdArrowDropright className=' text-sm md:text-2xl -ml-2 md:-ml-3 text-[#FF5F1F]' /></p>
                                         </div>
                                     </div>
-                                    <div className='-ml-2.5 md:-ml-0 items-center justify-center mx-auto mt-7 md:mt-20'>
+                                    <div className='-ml-2.5 md:ml-0 items-center justify-center mx-auto mt-7 md:mt-20'>
                                         <div>
                                             <p className=' h-7 w-7 md:h-16 md:w-16'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block' /></p>
                                         </div>
-                                        <div className=' items-center justify-center ml-[14px] md:ml-8'>
+                                        <div className=' items-center justify-center ml-3.5 md:ml-8'>
                                             <p className=' border-l md:border-l h-5 border-[#FF5F1F]'></p>
                                             <p className=' text-sm md:text-4xl  text-[#FF5F1F] -ml-1.5 md:-ml-[17px] -mt-2 md:-mt-4'><MdArrowDropDown /></p>
                                         </div>
@@ -193,9 +193,9 @@ export default function Referral() {
                                 <div className=' flex items-center mt-8 md:mt-0'>
                                     <div className='flex pt-5 md:pt-20'>
                                         <div>
-                                            <h4 className=' text-[12px] md:text-lg lg:text-2xl font-medium px-4 md:px-5 -mt-0 md:mt-0 text-white'>Level 5</h4>
+                                            <h4 className=' text-[12px] md:text-lg lg:text-2xl font-medium px-4 md:px-5 mt-0 md:mt-0 text-white'>Level 5</h4>
                                         </div>
-                                        <div className=' flex items-center -mt-0 md:mt-0'>
+                                        <div className=' flex items-center mt-0 md:mt-0'>
                                             <p className=' border-[#FF5F1F] border-t md:border-t w-10 md:w-20'></p>
                                             <p><IoMdArrowDropright className=' text-sm md:text-2xl -ml-2 md:-ml-3 text-[#FF5F1F]' /></p>
                                         </div>
@@ -204,13 +204,12 @@ export default function Referral() {
                                         <div>
                                             <p className=' h-7 w-7 md:h-16 md:w-16'><Image src={refferalImage} alt='image' className=' h-full w-full  rounded-full p-0 md:p-1  shadow-2xl inline-block' /></p>
                                         </div>
-                                        <div className=' items-center justify-center ml-[14px] md:ml-8'>
+                                        <div className=' items-center justify-center ml-3.5 md:ml-8'>
                                             <p className=' border-l-2 md:border-l h-5 border-[#FF5F1F] hidden'></p>
                                             <p className=' text-sm md:text-4xl  text-[#FF5F1F] -ml-1.5 md:-ml-[17px] -mt-2 md:-mt-4 hidden'><MdArrowDropDown /></p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
  
                             {/* level div 2  */}

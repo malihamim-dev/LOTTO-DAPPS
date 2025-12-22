@@ -43,7 +43,7 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
@@ -92,13 +92,13 @@ export default function Affiliet() {
                     </div>
                     {/* button section  */}
                     <div className="flex gap-4 mt-10 items-center justify-center">
-                        <div className="p-0 lg:p-[2px] rounded-full bg-gradient-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                            <Button className="w-28  lg:w-40 h-6 lg:h-12 rounded-full text-center text-[10px] lg:text-lg text-white bg-gradient-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                        <div className="p-0 lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
+                            <Button className="w-28  lg:w-40 h-6 lg:h-12 rounded-full text-center text-[10px] lg:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                 Refer a friend
                             </Button>
                         </div>
-                        <div className="p-0 lg:p-[2px] rounded-full bg-gradient-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                            <Button className="w-28 lg:w-40 h-6 lg:h-12 rounded-full text-center text-[10px] lg:text-lg text-white bg-gradient-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                        <div className="p-0 lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
+                            <Button className="w-28 lg:w-40 h-6 lg:h-12 rounded-full text-center text-[10px] lg:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                 Play
                             </Button>
                         </div>
@@ -119,7 +119,7 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 lg:h-20 xl:h-24 2xl:h-40 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
@@ -131,13 +131,13 @@ export default function Affiliet() {
                         <div className='flex '>
                             <p className="relative flex h-10 lg:h-20 xl:h-24 2xl:h-40 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                             </p>
                         </div>
                     </div>
                 </div>
                 <div
-                    className="relative w-[70%] mx-auto flex justify-between h-10 lg:h-20 xl:h-24 2xl:h-40 rounded-2xl dark:bg-gray-900  rounded-[10px]"
+                    className="relative w-[70%] mx-auto flex justify-between h-10 lg:h-20 xl:h-24 2xl:h-40 rounded-2xl dark:bg-gray-900  "
                     style={{
                         borderTop: '4px solid',
                         borderLeft: '4px solid',
@@ -148,7 +148,7 @@ export default function Affiliet() {
                     <div className="flex items-center justify-center mx-auto">
                         <p className="relative flex h-10 lg:h-20 xl:h-24 2xl:h-40 items-center justify-center mx-auto bg-white dark:bg-gray-900 rounded-md
                                 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px]
-                                before:bg-gradient-to-b before:from-[#D9828A]  before:to-[#4B3881]">
+                                before:bg-linear-to-b before:from-[#D9828A]  before:to-[#4B3881]">
                         </p>
                     </div>
                 </div>
@@ -168,15 +168,15 @@ export default function Affiliet() {
                 </div>
                 {/* button section  */}
                 <div className="flex gap-4 mt-10 items-center justify-center">
-                    <div className="p-[1px] lg:p-[2px] rounded-full bg-gradient-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
-                        <Button className="w-20  md:w-40 lg:w-32 xl:w-40 h-6 md:h-12 lg:h-8 xl:h-10 2xl:h-12 rounded-full text-center text-[10px] md:text-lg lg:text-[10px] xl:text-sm 2xl:text-lg text-white bg-gradient-to-r from-[#2d1c59bd] to-[#281a52e4]">
+                    <div className="p-px lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
+                        <Button className="w-20  md:w-40 lg:w-32 xl:w-40 h-6 md:h-12 lg:h-8 xl:h-10 2xl:h-12 rounded-full text-center text-[10px] md:text-lg lg:text-[10px] xl:text-sm 2xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                             Refer a friend
                         </Button>
                     </div>
-                    <div className="p-[1px] lg:p-[2px] rounded-full bg-gradient-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
+                    <div className="p-px lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                         <Button
                           onClick={() => setShowWallet(true)}
-                            className="w-20  md:w-40 lg:w-32 xl:w-40 h-6 md:h-12 lg:h-8 xl:h-10 2xl:h-12 rounded-full text-center text-[10px] md:text-lg lg:text-[10px] xl:text-sm 2xl:text-lg text-white bg-gradient-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
+                            className="w-20  md:w-40 lg:w-32 xl:w-40 h-6 md:h-12 lg:h-8 xl:h-10 2xl:h-12 rounded-full text-center text-[10px] md:text-lg lg:text-[10px] xl:text-sm 2xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
                             Play
                         </Button>
                          {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}

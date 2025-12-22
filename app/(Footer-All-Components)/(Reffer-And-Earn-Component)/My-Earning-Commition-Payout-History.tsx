@@ -50,21 +50,19 @@ export default function My_Earning_Comition_Payout_History() {
                 </div>
               </div>
             </div>
-           <div className='h-full w-full border border-[#ff5f1f] rounded-md lg:col-span-3 p-5 lg:p-3 xl:p-5 mt-10 lg:mt-0 
+            <div className='h-full w-full border border-[#ff5f1f] rounded-md lg:col-span-3 p-5 lg:p-3 xl:p-5 mt-10 lg:mt-0 
             flex flex-col justify-between'>
+              <div>
+                <FaSackDollar className='text-3xl text-[#ff5f1f]' />
+                <p className='text-[8px] md:text-sm lg:text-xs xl:text-sm font-medium text-white mt-2'>
+                  Get paid automatically when you earn the minimum amount for your chosen payout method.
+                </p>
+              </div>
 
-  <div>
-    <FaSackDollar className='text-3xl text-[#ff5f1f]' />
-    <p className='text-[8px] md:text-sm lg:text-xs xl:text-sm font-medium text-white mt-2'>
-      Get paid automatically when you earn the minimum amount for your chosen payout method.
-    </p>
-  </div>
-
-  <Button className='text-[8px] md:text-sm lg:text-[10px] xl:text-sm text-white border border-[#ff5f1f] bg-[#ff5f1f] mt-3'>
-    Add Payout Method
-  </Button>
-</div>
-
+              <Button className='text-[8px] md:text-sm lg:text-[10px] xl:text-sm text-white border border-[#ff5f1f] bg-[#ff5f1f] mt-3'>
+                Add Payout Method
+              </Button>
+            </div>
           </div>
           <div>
           </div>
@@ -93,6 +91,5 @@ export default function My_Earning_Comition_Payout_History() {
         </div>
       </div>
     </div>
-
   )
 }

@@ -51,7 +51,7 @@ export default function Hero() {
                         <FlipWords words={words} className=" text-white font-semibold" />
                     </p>
                     <div className="flex gap-4 items-center justify-center md:items-start md:justify-start">
-                        <div className="p-[1px] lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block ">
+                        <div className="p-px lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block ">
                             <Button 
                             onClick={() => setShowWallet(true)}
                             className="w-20 lg:w-28 xl:w-40 h-6.5 lg:h-9 xl:h-12 rounded-full text-center text-[10px] lg:text-[12px] xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4] cursor-pointer">
@@ -59,7 +59,7 @@ export default function Hero() {
                             </Button>
                              {showWallet && <Connect_Wallet onClose={() => setShowWallet(false)} />}
                         </div>
-                        <div className="p-[1px] lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
+                        <div className="p-px lg:p-0.5 rounded-full bg-linear-to-r from-[#dc838a] to-[#433281] shadow-2xl inline-block">
                             <Button className="w-20 lg:w-28 xl:w-40 h-6.5 lg:h-9 xl:h-12 rounded-full text-center text-[10px] lg:text-[12px] xl:text-lg text-white bg-linear-to-r from-[#2d1c59bd] to-[#281a52e4]">
                                 Learn More
                             </Button>
@@ -104,8 +104,10 @@ export default function Hero() {
                     </div>
                 </div>
                 {/* Right Side */}
-                <div className="relative md:flex justify-center items-center hidden md:block p-10">
+                <div className="hidden md:block">
+                    <div className="relative md:flex justify-center items-center  p-10">
                     <Image src={daduimage} alt="dadu image" className=" h-full w-full" />
+                </div>
                 </div>
             </div>
         </div>

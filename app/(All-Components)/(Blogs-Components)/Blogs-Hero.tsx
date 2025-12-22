@@ -2,8 +2,6 @@
 
 import { Button } from '@/components/ui/button'
 import React from 'react'
-
-
 import cardimage4 from '@/public/(Blogs-Images)/Blogs-Hero-Images/Gemini_Generated_Image_8slxpt8slxpt8slx 1.png'
 import Image from 'next/image'
 

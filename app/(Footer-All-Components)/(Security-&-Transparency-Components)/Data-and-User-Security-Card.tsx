@@ -85,7 +85,6 @@ export default function Data_and_User_Security_Card() {
             <p className=' text-sm md:text-[10px] lg:text-sm font-semibold text-white text-center'>Earn mare from your refertals</p>
           </div>
         </div>
-        
       </div>
     </div>
   )

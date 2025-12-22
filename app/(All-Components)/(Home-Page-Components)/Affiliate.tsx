@@ -10,9 +10,6 @@ import Link from "next/link";
 import Connect_Wallet from "../(Shard-Component)/Connect_Wallet";
 
 
-
-
-
 const Circle = forwardRef<
     HTMLDivElement,
     { className?: string; children?: React.ReactNode }

@@ -19,14 +19,8 @@ export default function Contact_Us() {
               </div>
               <div className=' space-y-3 md:space-y-5 pt-3 md:pt-5'>
                 <Input type="text" placeholder="Wallet Address" className='h-8 md:h-10 xl:h-12 border-none bg-white active:border active:border-[#ff5f1f] text-xs xl:text-[16px] placeholder:text-xs xl:placeholder:text-lg font-medium xl:font-semibold' />
-
-              
-
-               <Input type="text" placeholder="Subject" className='h-8 md:h-10 xl:h-12 border-none bg-white active:border active:border-[#ff5f1f] text-xs xl:text-[16px] placeholder:text-xs xl:placeholder:text-lg font-medium xl:font-semibold' />
-
-
+                <Input type="text" placeholder="Subject" className='h-8 md:h-10 xl:h-12 border-none bg-white active:border active:border-[#ff5f1f] text-xs xl:text-[16px] placeholder:text-xs xl:placeholder:text-lg font-medium xl:font-semibold' />
                 <Textarea placeholder="Message Details...." className=' h-40 md:h-48  border-none bg-white active:border active:border-[#ff5f1f] text-xs xl:text-[16px] placeholder:text-xs xl:placeholder:text-lg font-medium xl:font-semibold' />
-
                 <div className=' flex items-center justify-center'>
                   <Button className="text-white w-48 border border-[#ff5f1f] bg-transparent hover:bg-[#FF5F1F] hover:border-none px-4 md:px-10 h-6 md:h-8 lg:h-10 xl:h-12  text-[10px] lg:text-sm xl:text-[16px] hover:scale-110 rounded-full">
                     Send Message
@@ -38,7 +32,6 @@ export default function Contact_Us() {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Large_screen_Banner_Divider_image_lg_to_2xl() {
                 <div className="bg-[#2fa1de56] h-64 rounded-xl w-full backdrop-blur-lg p-5 grid grid-cols-2">
                     <div className='flex flex-col space-y-3'>
                         <div>
-                            <button className="py-0.5 px-3 rounded-sm border border-[#ff5f1f] text-[#000] font-semibold bg-white">
+                            <button className="py-0.5 px-3 rounded-sm border border-[#ff5f1f] text-black font-semibold bg-white">
                                 only one stack
                             </button>
 
@@ -24,7 +24,7 @@ export default function Large_screen_Banner_Divider_image_lg_to_2xl() {
                             </p>
                         </div>
                         <div className="mt-auto ">
-                            <button className="py-2 px-5 rounded-sm border border-[#ff5f1f] text-[#000] font-semibold bg-white -mt-10">
+                            <button className="py-2 px-5 rounded-sm border border-[#ff5f1f] text-black font-semibold bg-white -mt-10">
                                 Play Now
                             </button>
                         </div>
@@ -37,7 +37,7 @@ export default function Large_screen_Banner_Divider_image_lg_to_2xl() {
                <div className="bg-[#2fa1de56] h-64 rounded-xl w-full backdrop-blur-lg p-5 grid grid-cols-2 ">
                     <div className='flex flex-col space-y-3'>
                         <div>
-                            <button className="py-0.5 px-3 rounded-sm border border-[#ff5f1f] text-[#000] font-semibold bg-white">
+                            <button className="py-0.5 px-3 rounded-sm border border-[#ff5f1f] text-black font-semibold bg-white">
                                 only one stack
                             </button>
 
@@ -50,7 +50,7 @@ export default function Large_screen_Banner_Divider_image_lg_to_2xl() {
                             </p>
                         </div>
                         <div className="mt-auto ">
-                            <button className="py-2 px-5 rounded-sm border border-[#ff5f1f] text-[#000] font-semibold bg-white -mt-10">
+                            <button className="py-2 px-5 rounded-sm border border-[#ff5f1f] text-black font-semibold bg-white -mt-10">
                                 Play Now
                             </button>
                         </div>
