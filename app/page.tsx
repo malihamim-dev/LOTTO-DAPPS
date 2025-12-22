@@ -20,8 +20,8 @@ export default function Home() {
       <Jackpot_Tickets_Card />
       <Core_Concepts />
       <Jackpots_Rounds /> 
+       <Affiliate />
       <Reviews />
-      <Affiliate />
       <Connecting_Section />
 
       {/* connect wallet show when i am click play button in navbar */}
