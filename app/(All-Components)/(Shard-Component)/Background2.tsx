@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { ReactElement, useEffect } from "react";
 import * as THREE from "three";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
 import { RenderPass } from "three/examples/jsm/postprocessing/RenderPass.js";
@@ -15,7 +15,7 @@ interface ParticleUserData {
   rotationSpeed: number;
 }
 
-export default function Background2(): JSX.Element {
+export default function Background2(): ReactElement  {
   useEffect(() => {
     let scene: THREE.Scene;
     let camera: THREE.PerspectiveCamera;
@@ -40,15 +40,15 @@ export default function Background2(): JSX.Element {
 
     const layersConfig = [
       {
-        count: 20000,
+        count: 200,
         size: 0.3,
         colorRange: { hue: [0.75, 0.9], sat: [0.7, 1], light: [0.5, 0.7] },
         rotationSpeed: 0.001,
       },
       {
-        count: 25000,
+        count: 250,
         size: 0.2,
-        colorRange: { hue: [0.100, 0.6], sat: [0.6, 0.8], light: [0.4, 0.6] },
+        colorRange: { hue: [0.45, 0.6], sat: [0.6, 0.8], light: [0.4, 0.6] },
         rotationSpeed: 0.0005,
       },
     ];
@@ -90,7 +90,7 @@ export default function Background2(): JSX.Element {
       geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
 
       const texture = new THREE.TextureLoader().load(
-        "https://i.ibb.co.com/k22bdTRf/istockphoto-172290409-1024x1024-removebg-preview.png"
+        "https://placehold.co/32x32/ffffff/ffffff.png?text=+"
       );
 
       const material = new THREE.PointsMaterial({
